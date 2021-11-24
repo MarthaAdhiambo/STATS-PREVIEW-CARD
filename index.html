@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+         <meta name="viewport" content="devicewidth, initial-scale=1.0"> 
+
+      <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+      
+      <title>Frontend Mentor | Stats preview card component</title>
+      
+    <style>
+     @import url('https://fonts.googleapis.com/css2?family=Inter');
+     @import url('https://fonts.googleapis.com/css2?family=Lexend+Deca');
+      body{
+        background-color: hsl(233, 47%, 7%);
+        margin:auto ;
+        height: 400px;
+        width: 900px;
+        padding: 150px 70px;
+        font-family: 'Inter';
+               
+      }
+      .container{
+        box-sizing: border-box;
+        border-radius: 7px;
+        background-color: hsl(244, 38%, 16%);
+        width: 900px;
+        height: 350px;
+        margin: auto;
+        padding: 0;
+      }
+      .wordcontainer{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        margin: 15px 0px;
+        padding: 0px;
+      }
+      .description{
+        text-align: left;
+        color:hsla(0, 0%, 100%, 0.75);
+        margin-right: 60px ;
+      }
+      img{
+        width: 100%;
+        height: 350px;
+        object-fit: cover;
+        border-radius: 0px 7px 7px 0px;
+        background-color: hsl(277, 64%, 61%) opacity(0.8);
+      }
+      .attribution { font-size: 11px; text-align: center; }
+      .attribution a { color: hsl(228, 45%, 44%); }
+      h1{
+        margin: 60px 70px 0px 50px;
+        color:  hsl(0, 0%, 100%);
+        font-weight: 700;
+        font-size: 28px;
+
+      }
+      p{
+        margin: 20px 60px 0px 50px;
+       font-size: 14px;
+       font-weight: 400;
+      }
+      .statisticscontainer{
+        display: grid;
+        grid-template-columns: 28% 28% 28%;
+      }
+      .filters{
+        background-color: hsl(277, 59%, 38%);
+        opacity: 0.5;
+        position: absolute;
+        height: 350px;
+        width: 450px;
+        margin: 0px 450px;
+        box-sizing: border-box;
+}
+    </style>
+
+    </head>
+    <body>
+      <main class= container>
+         <Section class= "wordcontainer">
+            <div>
+               <h1>
+                  Get <span style="color: hsl(277, 64%, 61%);"> insights </span> that help your business grow.
+                </h1>
+                 <p class="description">
+                  Discover the benefits of data analytics and make better decisions regarding revenue, customer 
+                  experience, and overall efficiency. 
+                </p> <br>
+               <div class="statisticscontainer">
+                <div> <p> <span style="font-weight: 700; color:hsl(0, 0%, 100%) ;">10k+</span><br><span style="color: hsla(0, 0%, 100%, 0.75);">COMPANIES</span></p></div>
+                <div> <p> <span style="font-weight: 700; color: hsl(0, 0%, 100%);">314</span><br><span style="color: hsla(0, 0%, 100%, 0.75);"> TEMPLATES</span></p></div>
+                <div> <p><span style="font-weight: 700; color: hsl(0, 0%, 100%);">12M+</span> <br><span style="color: hsla(0, 0%, 100%, 0.75);"> QUERIES</span> </p></div>
+                </div>  
+            </div>
+              <img src="images/image-header-desktop.jpg" alt="Groups">
+              <div class="filters"></div>
+         </Section>
+         <footer class="attribution">
+          Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a> 
+          Coded by <a href="https://github.com/MarthaAdhiambo/My-card-Component-NFT">Martha Adhiambo</a>
+          <span>
+      </footer>
+      </main>
+    </body>
+</html>
